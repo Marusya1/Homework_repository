@@ -1,0 +1,42 @@
+body {
+    font: 14px Arial, Tahoma, Verdana, sans-serif;
+    background: #eee;
+}
+
+.wrapper {
+    background: #fff;
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.photo {
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: #7a7a7a;
+}
+
+.list {
+    margin-top: 30px;
+    margin-left: -15px;
+}
+
+.head,
+.learn,
+.contacts,
+.feedback {
+    padding: 5px 15px;
+}
+
+.contacts p {
+    margin-bottom: 0;
+}
