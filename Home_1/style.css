@@ -19,15 +19,14 @@ h1 {
     text-align: center;
 }
 
-hr {
-    height: 1px;
-    border: none;
-    background: #7a7a7a;
-}
-
 .list {
     margin-top: 30px;
     margin-left: -15px;
+}
+.head,
+.learn,
+.contacts {
+    border-bottom: 1px solid #7a7a7a;
 }
 
 .head,
@@ -35,6 +34,10 @@ hr {
 .contacts,
 .feedback {
     padding: 5px 15px;
+}
+
+.contacts {
+    padding-bottom: 20px; 
 }
 
 .contacts p {
