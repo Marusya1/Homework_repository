@@ -1,0 +1,166 @@
+/* Main style
+*/
+
+body {
+	font: 13.33px, OpenSansRegular, Tahoma, Verdana; 
+	background: #f9f9f9;
+	color: #2c2c2c;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+ 	text-decoration: none;
+}
+
+ul {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+li {
+	 	list-style: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 968px;
+ 	height: auto;
+	margin: 0 auto;
+	padding: 50px 46px 60px 46px;
+    background-color: #fff;
+}
+
+.logo img{
+		padding-bottom: 33px;
+		} 
+
+
+.menu {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 40px;
+	background: #424242;
+/*	padding: 0px;*/
+	font-size: 0;
+	}
+
+.menu a{
+	display: block;
+	padding: 10px 20px;
+	font-size: 14.67px;
+	color: #fff;
+	border-left: 1px solid #424242;
+	border-right: 1px solid #424242;
+
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu a:hover, 
+.menu .active {
+	background: #3b3b3b;
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+.tools-bar {
+	float: left;
+	width: 240px;
+}
+
+/* --- sidebar -- */
+
+.sidebar {
+	border: 1px solid #c8c8c8;
+	
+}
+
+.sidebar li {
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.sidebar li:last-child {
+	border-bottom: none;
+}
+
+.sidebar a{
+	display: block;
+	padding: 9px 23px;
+	color: #656363;
+}
+
+.sidebar a:hover,
+.sidebar .active {
+	padding-left: 34px;
+	background: #f9f9f9;
+}
+
+.content {
+	float: right;
+	width: 678px;
+	margin-bottom: 57px;
+}
+
+.content-img{
+	padding: 50px 0;
+	border: 1px solid #c8c8c8;
+	text-align: center;
+	margin-bottom: 35px;
+	max-width: 100%;
+}
+.content p{
+	float: right;
+	padding: 0 24px;
+	
+}
+
+/*--- footer --- */ 
+
+.footer {
+    clear: both;
+    height: 40px;
+    background: #e1e1e1;
+    padding: 0 24px;
+}
+
+.menu-bottom {
+    line-height: 40px;
+    float: left;
+}
+
+.menu-bottom li {
+    display: inline-block;
+    margin-right: 90px;
+}
+
+.menu-bottom a {
+    color: #2c2c2c;
+}
+
+.menu-bottom a:hover,
+.menu-bottom .active {
+    text-decoration: underline;
+}
+
+.copyright {
+    line-height: 40px;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
