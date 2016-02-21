@@ -1,5 +1,12 @@
 /* Main style
 */
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"), url("../../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 body {
 	font: 13.33px, OpenSansRegular, Tahoma, Verdana; 
@@ -19,7 +26,7 @@ ul {
  }
 
 li {
-	 	list-style: none;
+	list-style: none;
 }
 
 p {
@@ -31,28 +38,29 @@ p {
 	width: 968px;
  	height: auto;
 	margin: 0 auto;
-	padding: 50px 46px 60px 46px;
+	padding: 0 auto;
     background-color: #fff;
 }
+.wrapper1 {
+	padding: 30px 25px;
+}
 
-.logo img{
-		padding-bottom: 33px;
+.logo {
+	margin-bottom: 33px;
 		} 
 
 
 .menu {
-	position: relative;
 	overflow: hidden;
 	margin-bottom: 40px;
 	background: #424242;
-/*	padding: 0px;*/
 	font-size: 0;
 	}
 
 .menu a{
 	display: block;
 	padding: 10px 20px;
-	font-size: 14.67px;
+	font-size: 14px;
 	color: #fff;
 	border-left: 1px solid #424242;
 	border-right: 1px solid #424242;
@@ -71,7 +79,7 @@ p {
 }
 .tools-bar {
 	float: left;
-	width: 240px;
+	width: 200px;
 }
 
 /* --- sidebar -- */
@@ -100,11 +108,15 @@ p {
 	padding-left: 34px;
 	background: #f9f9f9;
 }
+.container {
+	position: relative;
+	overflow: hidden;
+}
 
 .content {
 	float: right;
-	width: 678px;
-	margin-bottom: 57px;
+	width: 670px;
+	margin-bottom: 55px;
 }
 
 .content-img{
@@ -123,10 +135,11 @@ p {
 /*--- footer --- */ 
 
 .footer {
-    clear: both;
-    height: 40px;
+	overflow: hidden;
     background: #e1e1e1;
     padding: 0 24px;
+    margin: 0 auto;
+    width: 880px;
 }
 
 .menu-bottom {
