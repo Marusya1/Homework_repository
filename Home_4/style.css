@@ -1,14 +1,5 @@
 
-/* - - font-family - - 
-
-@font-face {
-    font-family: "OpenSansRegular";
-    src: url("../../fonts/OpenSansRegular/OpenSansRegular.eot");
-    src: url("../../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"), url("../../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-*/
+ /* main style */ 
 
 body {
 	font: normal 10px/18px Tahoma, Verdana, sans-serif;
@@ -20,6 +11,13 @@ body {
 ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
+}
+ul:after {
+	display: block;
+	content: ' ';
+	clear: both;
+	float: none;
 }
 
 li {
@@ -30,6 +28,8 @@ p {
 	margin: 0;
 	padding: 0;
 }
+/* - - background - - */
+
 .background {
 	margin-top: 25px;
 	background: linear-gradient(to bottom, rgb(65,198,211), rgb(16,142, 175));
@@ -66,6 +66,8 @@ p {
 /*.wrapper1 {
 	display: table-row;
 	height: 100%;}*/
+
+	/* - - header - - */
 
 .header {
 	background: #11cee1;
@@ -116,20 +118,26 @@ p {
 	clear: right;
 	margin-bottom: 2px;
 }
+
+/* - - picture - - */
 .picture img {
 	display: block;
 	width: 1000px;
 }
+ 
+  /* - - conteiner - - */ 
 
-.tools-bar li{
-	display: inline-block;
-}
 .tools-bar {
 	margin-top: 0;
 	background: #323232;
 	border: 1px solid #c8c8c8;
 	top:50%;
 }
+.tools-bar li{
+	display: inline-block;
+	position: relative;
+}
+
 .tools-bar a{
 	display: block;
 	padding: 10px 25px;
@@ -139,10 +147,37 @@ p {
 	color: #fff;
 	height: 25px;
 }
-.tools-bar a:hover,
-.tools-bar .active {
-	
+.tools-bar a:hover {
+	background-color: #333333; 
 }
+.submenu {
+	display: none;
+	position: absolute;
+	width: 200px;
+	top: 37px;
+	left: 0;
+	background-color: #333333;
+	color: #fff;
+}
+.submenu li {
+	display: block;
+
+}
+.submenu a {
+	display: block;
+	padding: 10px 25px;
+	color: #fff;
+	background-color: #333333;
+	text-decoration: none;
+}
+.submenu a:hover {
+	text-decoration: underline;
+}
+.tools-bar li:hover,
+.submenu {
+	display: block;
+} 
+
 .sidebar a,
 .news a {
 	text-decoration: none;

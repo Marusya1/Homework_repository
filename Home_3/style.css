@@ -8,8 +8,12 @@
     font-weight: normal;
 }
 
+body, html {
+	height: 100%;
+}
+
 body {
-	font: 13.33px, OpenSansRegular, Tahoma, Verdana; 
+	font: 13px, OpenSansRegular, Tahoma, Verdana; 
 	background: #f9f9f9;
 	color: #2c2c2c;
 	margin: 0;
@@ -36,13 +40,18 @@ p {
 
 .wrapper {
 	width: 968px;
- 	height: auto;
 	margin: 0 auto;
-	padding: 0 auto;
+	padding: 0;
     background-color: #fff;
-}
+    display: table;
+    overflow: hidden;;
+    table-layout: fixed;
+    min-height: 100%;
+  }
 .wrapper1 {
-	padding: 30px 25px;
+	padding: 30px 25px 0px;
+	/*display: table-row;
+	height: 100%;*/
 }
 
 .logo {
@@ -60,7 +69,7 @@ p {
 .menu a{
 	display: block;
 	padding: 10px 20px;
-	font-size: 14px;
+	font-size: 15px;
 	color: #fff;
 	border-left: 1px solid #424242;
 	border-right: 1px solid #424242;
@@ -116,7 +125,7 @@ p {
 .content {
 	float: right;
 	width: 670px;
-	margin-bottom: 55px;
+	margin-bottom: 0px;
 }
 
 .content-img{
