@@ -32,8 +32,7 @@ p {
 
 .background {
 	margin-top: 25px;
-	background: linear-gradient(to bottom, rgb(65,198,211), rgb(16,142, 175));
-	height: 390px;
+	background: linear-gradient(to bottom, rgb(20,206,225), rgb(16,142, 175));
 	width: 100%;
 	position: absolute;
 	z-index: -1;
@@ -44,7 +43,7 @@ p {
 	content: '';
 	display: block;
 	background: linear-gradient(to bottom, rgb(20,206,225), rgb(249,254,254));
-	height: 153.5px;
+	height: 145px;
 	width: 100%;
 }
 
@@ -55,9 +54,9 @@ p {
 	margin: 0 auto;
 	padding: 0;
 	background: #fff;
-	-moz-box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
-	-webkit-box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
-	box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
+	-moz-box-shadow: 0 0 10 4 rgba(0, 140, 152, 1);
+	-webkit-box-shadow: 0 0 10 4 rgba(0, 140, 152, 1);
+	box-shadow: 0 0 10px 4px rgba(0, 140, 152, 1);
 	display: table;
 	table-layout: fixed;
 	min-width: 1000px;
@@ -81,31 +80,36 @@ p {
 	background: #fff;
 	-moz-box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
 	-webkit-box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
-	box-shadow: 0 0 10 4 rgba(30, 140, 152, 1);
+	box-shadow: 0 0 0 4 rgba(0, 0, 0, 0.5);
 }
 
 .logo img{
 	display: block;
 	float: left;
 	margin: 0 15px;
+	height: 170px;
 	width: 30%;
 }
 
 .info {
 	display: block;
 	float: right;
-	margin: 0 20px;
+	margin: 10px 20px;
 }
 
 .contacts {
 	float: right;
 	font-size: 12px;
 	color: #5fa5bb;
+	margin-bottom: 10px;
 }
 .contacts a{
 
 	text-decoration: none;
 	color: #5fa5bb;
+}
+.countries {
+	clear: right;
 }
 .countries li{
 	text-align: center;
@@ -114,39 +118,37 @@ p {
 	top: 50px;
 }
 
-.countries {
-	clear: right;
-	margin-bottom: 2px;
-}
-
-/* - - picture - - */
-.picture img {
-	display: block;
-	width: 1000px;
-}
  
   /* - - conteiner - - */ 
 
+
+.picture img {
+	display: block;
+	width: 1000px;
+	border-bottom: 1px solid #cacbcb;
+
+}
 .menu {
-/*	margin-top: 0;*/
+	position: relative;
+	z-index:1;
 	background: #323232;
-	border: 1px solid #c8c8c8;
-/*	top:50%;*/
+	border-top: 1px solid #138aa7;
+	border-bottom: 1px solid #000;
+	box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
 }
 .menu li{
 	float: left;
-/*	display: inline-block;*/
+	display: inline-block;
 	position: relative;
 }
 
 .menu a{
 	display: block;
-	padding: 10px 25px;
+	padding: 9px 35px;
 	font-size: 15px;
 	text-decoration: none;
-	/*background: #323232;*/
 	color: #fff;
-	height: 25px;
+	height: 18px;
 }
 .menu a:hover {
 	background-color: #333333; 
@@ -159,6 +161,9 @@ p {
 	left: 0;
 	background-color: #333333;
 	color: #fff;
+	box-shadow: 0 0 10px 6px rgba(0, 0, 155, 0.5);
+	z-index: 1;
+
 }
 .submenu li {
 	float: none;
@@ -181,14 +186,45 @@ p {
 	display: block;
 }
 .submenu a {
-	/*display: block;*/
 	padding: 10px 25px;
 	color: #fff;
 	background-color: #333333;
 	text-decoration: none;
+	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+	-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5) ;
 }
 .submenu a:hover {
 	text-decoration: underline;
+}
+
+/*---FON --- */
+
+.fon {
+	width: 1000px;
+	overflow: hidden;
+}
+
+.right-box,
+.left-box {
+	width: 20%;
+	background: #edeef0;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+	text-align: -webkit-center;
+	line-height: 20px;
+}
+.right-box {
+	float: right;
+}
+.left-box {
+	float: left;
+}
+
+.main {
+	width: 60%;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
 }
 
 .sidebar a,
@@ -196,28 +232,14 @@ p {
 	text-decoration: none;
 	color: #000;
 	font-size: 13px;
-
 }
-.sidebar,
-.news {
-	text-align: -webkit-center;
-	width: 20%;
-	height: 550px;
-	background: #edeef0;
-	line-height: 20px;
+.sidebar a:hover {
+	text-decoration: underline;
 }
-.sidebar {
-	float: left;
+.news a:hover {
+	text-decoration: underline;
 }
 
-.main {
-	width: 60%;
-	margin: 0 auto;
-}
-
-.news {
-	float: right;
-}
 .footer {
 	overflow: hidden;
 	text-align: center;
