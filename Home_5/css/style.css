@@ -38,7 +38,7 @@ body {
 header {
 	display: inline-block;
 	background: #085697;
-	height: 35px;
+	height: auto;
 	width: 100%;
 }
 
@@ -56,7 +56,10 @@ header {
 	padding-right: 20px;
 	padding-left: 20px;
 	border-left: 2px solid #53a3db;
-
+}
+.block1 img:hover {
+	text-decoration: #4eabda;
+	opacity: 0.5;
 }
 .block2 {
 	float: right;
@@ -91,7 +94,6 @@ header {
 }
 .menu a:hover {
 	background-color: #4eabda; 
-	height: 15px;
 	color: #fff;
 	opacity: 0,6;
 }
@@ -99,13 +101,11 @@ header {
 /* -- CONTEINER -- */ 
 
 .conteiner {
-	position: absolute;
 	display: block;
 	width: 560px;
 	height: 600px;
-	top: 50%;
-	left: 50%;
-	margin: -300px 0 0 -270px;
+	padding-top: 150px;
+	padding-left: 650px;
 	text-align: center;
 }
 .clearfix:after {
