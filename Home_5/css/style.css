@@ -105,7 +105,8 @@ header {
 	width: 560px;
 	height: 600px;
 	padding-top: 150px;
-	padding-left: 650px;
+	margin: 0 auto;
+/*	padding-left: 650px;*/
 	text-align: center;
 }
 .clearfix:after {
