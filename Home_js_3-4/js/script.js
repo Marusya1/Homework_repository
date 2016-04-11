@@ -1,9 +1,9 @@
-data.pageTitle
+//data.pageTitle
 var data = {
 	'pageTitle': ' Тест по программированию',
-	'questions': [{
-		'questionsName': 'Вопрос № 1',
-		'questionsList': [{
+	'question': [{
+		'questionName': 'Вопрос № 1',
+		'questionList': [{
 			'title': 'Вариант ответа № 1'
 		},
 		{
@@ -14,8 +14,8 @@ var data = {
 		}]
 	},
 	{
-		'questionsName': 'Вопрос № 2',
-		'questionsList': [{
+		'questionName': 'Вопрос № 2',
+		'questionList': [{
 			'title': 'Вариант ответа № 1',
 		},
 		{
@@ -26,8 +26,8 @@ var data = {
 		}]
 	},
 	{	
-		'questionsName': 'Вопрос № 3',
-		'questionsList': [{
+		'questionName': 'Вопрос № 3',
+		'questionList': [{
 			'title': 'Вариант ответа № 1',
 		},
 		{
@@ -50,33 +50,33 @@ var page = {
 		wrapper.appendChild(titlePage);
 	},
 	addList: function() {
-		for(var i = 0; i < data.questions.length; i++) {
+		for(var i = 0; i < data.question.length; i++) {
 			var questionBox = document.createElement('div');
 			questionBox.className = 'questionBox';
 			document.querySelector('.wrapper').appendChild(questionBox);
 
 			var titleQuestion = document.createElement('h2');
-			titleQuestion.innerHTML = data.questions[i].questionName;
+			titleQuestion.innerHTML = data.question[i].questionName;
 			questionBox.appendChild(titleQuestion);
 
-			var varients = document.createElement('ul');
+			var varients = document.createElement('ol');
 			questionBox.appendChild(varients);
 
-			for (var j = 0; j < data.questions[i].questionList.length; j++) {
+			for (var j = 0; j < data.question[i].questionList.length; j++) {
 				var listItem = document.createElement('li');
 				varients.appendChild(listItem);
 
 				var list_link = document.createElement('a');
-				list_link.innerHTML = data.questions[i].questionList[j].title;
-				list_link.setAttribute('href', data.questions[i].questionList[j].href);
+				list_link.innerHTML = data.question[i].questionList[j].title;
+				list_link.setAttribute('href', data.question[i].questionList[j].href);
 				listItem.appendChild(list_link);
 			}
 		}
 	},
 	addButton: function() {
-		var div = document.createElement('div');
+		var div = document.createElement('form');
 		div.className = 'button-box';
-		document.querySelector('.form').appendChild(div);
+		document.querySelector('.wrapper').appendChild(div);
 
 		var button = document.createElement('input');
 		button.className = 'button';
@@ -85,7 +85,7 @@ var page = {
 		div.appendChild(button);
 	},
 	
-	pageTitle: function() {
+	pageInit: function() {
 		this.addDivWrapper();
 		this.addList();
 		this.addButton();
