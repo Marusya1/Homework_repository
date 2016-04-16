@@ -17,3 +17,6 @@
  	$('.box').animateBox();
  	$('.box2').animateBox();
  });
+
+
+ 

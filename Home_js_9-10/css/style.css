@@ -1,0 +1,23 @@
+.slider {
+	width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.slade {
+	/*position: absolute;*/
+	float: left;	
+}
+.slide-track {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slider-track:after {
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
