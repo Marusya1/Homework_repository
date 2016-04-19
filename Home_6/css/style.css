@@ -13,8 +13,6 @@
 }
 body, html {
 	font: normal 14px/18px 'lucida_sans_unicoderegular', Arial, Tahoma, Verdana, sans-serif;
-	margin: 0;
-	padding: 0;
 }
 .wrapper {
 	display: table;
@@ -23,7 +21,6 @@ body, html {
 	overflow: hidden;
 	table-layout: fixed;
 	min-width: 910px;
-/*	position: relative;*/
 }
 .wrapper1 {
 	display: table-row;
@@ -107,18 +104,17 @@ header {
 	text-decoration: underline;
 	padding: 0 5px;
 }
-.enter a{
+.enter a {
 	position: relative;
 	color: #fff;
 	text-decoration: none;
 	font-size: 10px;
 }
-.enter span.reg{
+.enter span.reg {
 	border-left: 1px solid #fff;
 	color: #fff;
 	padding-left: 7px;
 }
-
 .home {
 	float: right;
 	border: 1px solid #d3d8da;
@@ -131,8 +127,8 @@ header {
 	margin-top: 10px;
 	width: 100%;
 }
-
 /* --- main -- */
+
 .boxChoice img {
 	padding-left: 7px;
 }
@@ -217,11 +213,16 @@ header {
 }
 .sidebar-title{
 	border: 1px solid #79878d;
-/	border-radius: 18px;
-/*	display: inline-block;*/
+	border-radius: 18px;
+	display: inline-block;
 	width: 165px;
-	padding: 2px 2px;
+	padding: 1px 2px 3px 1px;
 	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+.sidebar-title img {
+	position: relative;
+	top: 5px;
+	padding-left: 2px;
 }
 .catalog {
 	float: left;
@@ -233,9 +234,6 @@ header {
 }
 .filterBox{
 	margin-top: 10px;
-}
-.choise:hover{
-	cursor: pointer;
 }
 .filterBox ul li a{
 	text-decoration: none;
@@ -249,29 +247,32 @@ header {
 	list-style-position: inside;
 	padding-left: 25px;
 }
-
 .filterBox a:hover{
 	text-decoration: underline;
 	color:#0c3256;
 	font-style: italic;
 	font-size: 14px;
 	font-weight: 600;
-	border: 1px solid #79878d;
-	border-radius: 15px;
 	width: 148px;
 }
 .box {
 	background-size: 20px;
 	background-position: 5px 3px;	
 }
-.filterTitle p {
-	padding-left: 30px;
-	font-size: 12px;
-}
 .filterTitle {
 	border: 1px solid #79878d;
 	border-radius: 18px;
 	width: 148px;
+}
+.filterTitle p {
+	padding-left: 5px;
+	font-size: 12px;
+}
+.filterTitle img {
+	position: relative;
+	top: 4px;
+	padding-left: 2px;
+	padding-right: 3px;
 }
 /* -- content -- */ 
 .content{
@@ -325,7 +326,7 @@ header {
 /* -- sidebar-right -- */
 .sidebar-right{
 	float: right;
-	width: 180px;
+	width: 200px;
 	margin-top: 10px;
 }
 .sidebar-right li{
@@ -337,8 +338,7 @@ input[type="checkbox"]{
     margin-right: 15px;
 }
 input[type="submit"]{
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6585+0,0d3458+100 */
-	background: rgb(31,101,133); /* Old browsers */
+	background: rgb(31,101,133); 
 	background: -moz-linear-gradient(top,  rgba(31,101,133,1) 0%, rgba(13,52,88,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top,  rgba(31,101,133,1) 0%,rgba(13,52,88,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  rgba(31,101,133,1) 0%,rgba(13,52,88,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -352,14 +352,22 @@ input[type="submit"]{
 .submit:hover {
 	opacity: 1;
 }
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
 
 /* -- brands -- */ 
 .brands {
 	display: inline-block;
+	width: 100%;
+}
+.brands ul {
+	text-align: center;	
 }
 .brands li {
 	display: inline-block;
-	text-align: center;	
 	vertical-align: middle;
 	text-decoration: none;
 	margin-top: 15px;
@@ -380,23 +388,23 @@ footer p{
 	padding-top: 10px;
 	color: #754542;
 }
-.menu-list {
+.list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-.menu-list a{
+.list a{
 	color: #fff;
 	text-decoration: none;
 }
-.menu-list a:hover {
+.list a:hover {
 	color: #52abcb;
 }
-.menu-list li {
+.list li {
 	display: inline-block;
 	padding: 0 10px;
 	border-right: 1px solid #bec6c9;
 }
-.menu-list li:last-child{
+.list li:last-child{
 	border-right: none;
 }
