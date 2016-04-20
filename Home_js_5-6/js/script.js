@@ -1,7 +1,7 @@
 var mss = 0;
 var sec = 0;
 var min = 0;
-var hrc = 0;
+var hrs = 0;
 var dateTimeObj = new Date();
 var switcher=0, 
 	timeInit=0,
