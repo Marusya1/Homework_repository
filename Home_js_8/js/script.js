@@ -1,11 +1,11 @@
 $(function() {
-    $(".tab_content").hide(); 
+    $(".tabContent").hide(); 
     $("ul.tabs li:first").addClass("active").show(); 
-    $(".tab_content:first").show(); 
+    $(".tabContent:first").show(); 
     $("ul.tabs li").click(function() {
     $("ul.tabs li").removeClass("active"); 
  $(this).addClass("active"); 
- $(".tab_content").hide(); 
+ $(".tabContent").hide(); 
  var activeTab = $(this).find("a").attr("href"); 
  $(activeTab).fadeIn(); 
  return false;
