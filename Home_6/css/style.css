@@ -1,6 +1,5 @@
 * {
-	margin: 0;
-	padding: 0;
+	box-sizing: border-box;
 }
 @font-face {
     font-family: "lucida_sans_unicoderegular";
@@ -13,6 +12,8 @@
 }
 body, html {
 	font: normal 14px/18px 'lucida_sans_unicoderegular', Arial, Tahoma, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 .wrapper {
 	display: table;
@@ -99,6 +100,10 @@ header {
     padding: 5px 2px;
     cursor: pointer;
 }
+.enter1:hover {
+	color: #fff;
+	opacity: 0.6;
+}
 .enter a span {
 	color: #bfbfbf;
 	text-decoration: underline;
@@ -115,28 +120,40 @@ header {
 	color: #fff;
 	padding-left: 7px;
 }
+.login a:hover {
+	color: #fff;
+	opacity: 0.6;
+}	
 .home {
 	float: right;
 	border: 1px solid #d3d8da;
 	margin-right: 10px;
-	padding: 2px 12px;
+	padding: 5px 12px;
 	border-radius: 15px;
+}
+.home a {
+	font-size: 12px;
+	vertical-align: middle;
 }
 .logo img{
 	display: block;
 	margin-top: 10px;
 	width: 100%;
 }
+.home a:hover {
+	color: #fff;
+	opacity: 0.6;
+}
 /* --- main -- */
-
-.boxChoice img {
-	padding-left: 7px;
+.main {
+	display: block;
+	width: 100%;
+	min-width: 910px;
 }
 .menu {
 	display: inline-block;
 	background: #1b1d20;
 	border-radius: 7px;
-	width: 100%;
 }
 .menu-main{
 	padding-left: 20px;
@@ -161,7 +178,7 @@ header {
 .menu li:hover {
 	background-color: #124569; 
 	color: #fff;
-	opacity: 0,6;
+	opacity: 0.6;
 	border-radius: 10px;
 } 
 .buy {
@@ -189,7 +206,6 @@ header {
 	vertical-align: middle;
 	padding-top: 12px;
 }
-
 .num:after {
 	display: inline-block;
 	vertical-align: middle;
@@ -203,6 +219,10 @@ header {
 	content:"0.00 грн";
 	padding-left: 5px;
 	color: #0d5a8f;
+}
+.boxChoice img {
+	padding-left: 5px;
+	display: inline-block;
 }
 /*--- sidebar --- */ 
 .sidebar-left{
@@ -322,6 +342,10 @@ header {
 .item span{
 	font-size: 14px;
 }
+.item a:hover {
+	color: #fff;
+	opacity: : 0.6;
+}
 
 /* -- sidebar-right -- */
 .sidebar-right{
@@ -347,9 +371,12 @@ input[type="submit"]{
 	padding: 7px 13px 7px;
 	border-radius: 25px;
 	color: #fff;
+	cursor: pointer;
 	border: none;
 }
-.submit:hover {
+
+.choise:hover {
+	color: #0c3256;
 	opacity: 1;
 }
 .clearfix:after {
