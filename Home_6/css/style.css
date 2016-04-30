@@ -170,11 +170,11 @@ header {
 }
 .menu ul {
 	padding-right: 15px;
-	margin: 5px 0;
+	margin: 4px 0;
 }
 .menu a{
 	display: block;
-	padding: 10px 20px;
+	padding: 5px 20px;
 	font-size: 14px;
 	text-decoration: none;
 	color: #fff;
@@ -246,7 +246,7 @@ header {
 	border-radius: 18px;
 	display: inline-block;
 	width: 170px;
-	padding: 1px 2px 3px 1px;
+/*	padding: 1px 2px 3px 1px;*/
 	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
 }
 .sidebar-title img {
@@ -261,6 +261,8 @@ header {
 }
 .sidebar-title p{
 	font-size: 12px;
+	margin: 0 auto;
+	padding-bottom: 5px;
 }
 .filterBox{
 	margin-top: 10px;
@@ -295,7 +297,9 @@ header {
 }
 .filterTitle p {
 	padding-left: 5px;
+	padding-bottom: 5px;
 	font-size: 12px;
+	margin: 0 auto;
 }
 .filterTitle img {
 	position: relative;
