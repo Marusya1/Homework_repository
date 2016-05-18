@@ -144,11 +144,8 @@ header {
 }
 button.fb_login {
 	display: block;
-	/*margin: auto;*/
 	border: 1px solid rgba(0, 0, 0, 0);
 	border-radius: 5px;
-	/*text-align: center;
-	background: #354b87;*/
 	width: 100%;
 	background: none;
 }
@@ -178,7 +175,6 @@ input[type="text"],
 input[type="email"], 
 input[type="password"] {
 	width: 100%;
-/*	margin-bottom: 16px;*/
 	padding: 11px 18px;
 	background-color: #0f0f0f;
 	border: 1px solid #484848;
@@ -213,12 +209,9 @@ input[type="password"]:focus {
 	border: none;
 }
 .last {
-/*	display: table-cell;
-	overflow: hidden;*/
 	margin-top: 10px;
 	margin-bottom: 20px;
 	width: 100%;
 	text-align: center;
 	color: #ccc;
-/*	display: block;*/
 }	

@@ -1,0 +1,219 @@
+body {
+    background: #F0EFE7;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+/*Carousel*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+/*DROPDOWN MENU*/
+nav {
+    background-color: #bbb;
+    padding: 10px;
+    margin-bottom: 300px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav li ul {
+    background-color: rgb(78, 80, 80);
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 200px;
+}
+
+nav li li {
+    position: relative;
+    display: block;
+}
+
+nav li li ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+nav a {
+    line-height: 40px;
+    padding: 0 30px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+    opacity: .9;
+    background: #ccc;
+}
+
+nav li li a {
+    border-bottom: solid 1px #fff;
+}
+
+ul.sub-menu {
+    display: none;
+    padding: 0;
+}
+
+nav li.dropdown > a {
+    position: relative;
+}
+
+nav li.dropdown > a:after {
+    position: absolute;
+    content: '';
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 3px 0 3px;
+    border-color: #fff transparent transparent transparent;
+}
+
+.main-box {
+	margin: 0 auto;
+	padding-top: 100px;
+	width: 1200px;
+}
+/*select*/
+.select-box{
+	margin-bottom: 200px;
+}
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 17px; height: 17px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 3px; left: 4px;
+  font-size: 18px;
+  line-height: 0.8;
+  color: #248cec;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 1px solid #4778d9!important;
+}
+
+/* Useless styles, just for demo design */
+
+form {
+  width: 80px;
+  margin: 0 auto;
+}
+
+/*---------*/
+.well{
+  width: 100%;
+}
+
+.checkbox-wrap,
+.css-checkbox,
+.select-box{
+  width: 400px;
+  float: left;
+}

@@ -1,24 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.css">
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<title>Home_js_9-10</title>
+    <meta charset="utf-8">
+    <title>Home_js_9-10</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" href="css/prettyCheckable.css">
+    <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+    <link rel="stylesheet" href="css/fancySelect.css">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/fancySelect.js"></script>
+    <script src="js/prettyCheckable.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
+
 <body>
-<div>
-	<div class="slider js-slider">
-		<div class="slide"><img scr="images/img.1.jpg"></div>
-		<div class="slide"><img scr="images/img.2.jpg"></div>
-		<div class="slide"><img scr="images/img.3.jpg"></div>
-	</div>
-</div>
+    
+    <!-- Carousel -->
+    <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+            <ul>
+                <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+            </ul>
+        </div>
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        <p class="jcarousel-pagination">
+        </p>
+    </div>
+
+    <!-- Drop-down Menu -->
+    <div class="menu-wrapper">
+        <nav>
+            <ul class="container clearfix main-menu">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li class="dropdown">
+                    <a href="#">Item 3</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Item 3.1</a></li>
+                        <li><a href="#">Item 3.2</a></li>
+                        <li><a href="#">Item 3.3</a></li>
+                        <li class="dropdown">
+                            <a href="#">Item 3.4</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Item 3.4.1</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Item 3.4.2</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Item 3.4.2.1</a></li>
+                                        <li><a href="#">Item 3.4.2.2</a></li>
+                                        <li><a href="#">Item 3.4.2.3</a></li>
+                                        <li><a href="#">Item 3.4.2.4</a></li>
+                                        <li><a href="#">Item 3.4.2.5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Item 3.4.3</a></li>
+                                <li><a href="#">Item 3.4.4</a></li>
+                                <li><a href="#">Item 3.4.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item 3.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- fancy select -->
+  	<div class="main-box">
+   		<div class="select-box">
+ 		   <p>Fancy Select</p>
+		        <select class="basic">
+ 	           <option value="">Select something…</option>
+ 	           <option>Lorem</option>
+ 	           <option>Ipsum</option>
+ 	           <option>Dolor</option>
+ 	           <option>Sit</option>
+ 	           <option>Amet</option>
+ 	       </select>
+ 	   </div>
 
 
-	<script src="js/script.js"></script>
-	<script src="js/main.js"></script>
+<!-- Checkbox with CSS -->
+  	 	<div class="checkbox-wrap">
+  	    	<p>Checkbox with CSS</p>
+  	  	    <form action="#">
+ 	    	    <p>
+                <input type="checkbox" id="test1" />
+                <label for="test1">One</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test2">
+                <label for="test2">Two</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test3"></label>
+                <label for="test3">Three</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test4">
+                <label for="test4">Four</label>
+            </p>
+            <p>
+                <input type="checkbox" id="test5">
+                <label for="test5">Five</label>
+            </p>
+       		 </form>
+ 		</div>
 
+    <!-- Checkbox with JS -->
+   		 <div class="js-checkbox-wrap  css-checkbox">
+  			<p>Custom Checkbox with JS</p>
+	        <form class="well">
+ 		        <div class="input-wrapper">
+           		    <div class="input-wrapper">
+                    <input type="checkbox" class="prettyCheckable" value="0"  data-label='Uno'>
+             		</div>
+           		    <div class="input-wrapper">
+                    <input type="checkbox" class="prettyCheckable" value="1" id="color2" data-label='Dos' data-color="green" unckecked/>
+           		    </div>
+             		<div class="input-wrapper">
+                    <input type="checkbox" class="prettyCheckable" value="1" id="color3" data-label='Tres'>
+   		            </div>
+   		            <div class="input-wrapper">
+                    <input type="checkbox" class="prettyCheckable" value="1" id="color4" data-label='Cuatro'>
+      		        </div>
+     		        <div class="input-wrapper">
+                    <input type="checkbox" class="prettyCheckable" value="1" id="color5" data-label='Cinco'>
+            	    </div>
+         		</div>
+       		</form>
+    	</div>
+    </div>
 </body>
+
 </html>
