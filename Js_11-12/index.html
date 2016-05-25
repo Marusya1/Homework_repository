@@ -1,66 +1,43 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Home_js_11-12</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="js/jquery.fancybox.js"></script>
-    <script src="js/jQuery.Carousel.js"></script>       
-	<script src="js/template.js"></script>
-	<script src="js/main.js"></script>
-</head>
-<body>
-	<div class="content clearfix">
-		<div class="carousel-list">
-			<div class="carousel-item">
-				<a href="img/photo1.jpg" class="fancybox1">
-				<img src="img/photo1.1.jpg" alt="donetsk"></a>
-			</div>
-			<div class="carousel-item">
-				<a href="img/photo2.jpg" class="fancybox2">
-				<img src="img/photo2.2.jpg" alt="donetsk"></a>
-			</div>
-			<div class="carousel-item">
-				<a href="img/photo3.jpg" class="fancybox3">
-				<img src="img/photo3.3.jpg" alt="donetsk"></a>
-			</div>
-			<div class="carousel-item">
-				<a href="img/photo4.jpg" class="fancybox4">
-				<img src="img/photo4.4.jpg" alt="donetsk"></a>
-			</div>
-		</div>
-	</div>
+    <head>
+        <meta charset="utf-8">
+        <title>Home_js_11-12</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/jQuery.Carousel.js"></script>       
+        <script src="js/template.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
 
-	<script type="text/html" id="test"> 
-	<div class="wrapper">
-			<div class="head">
-				<h1><%= data[0].myName %></h1>
-				<p><%= data[1].info %></p>
-			</div>	
+        <div class="content clearfix">
+            <div class="carousel-list">
+                <div class="carousel-item"><img src="img/photo1.jpg" alt=""></div>
+                <div class="carousel-item"><img src="img/photo2.jpg" alt=""></div>
+                <div class="carousel-item"><img src="img/photo3.jpg" alt=""></div>
+                <div class="carousel-item"><img src="img/photo4.jpg" alt=""></div>
+            </div>
 
-      		<div class="learn">
-           		<p class="content"><%= data[2].content %></p>
 
-			    <ul class="list">
-           		<% for (var i = 0; i < data.length; i++) { %> 
-           			<li><%= data[3].reason[0] %></li>
-	            <% }; %>
-	          		<li><%= data[3].reason[1] %></li>
-	            <% }; %>
-	              </ul>
-   		    </div>
-	
-    	    <div class="contacts">
-        	    <p>Мой контактный телефон:<%= data[i].phone %></p>
-      		    <a href="tel:380508166211">0508166211</a>
-           		<p>Мой электронный адрес</p>
-           		<a href=<%= data[i].email %></a>
-           		<p>Мой профиль Вконтакте</p>
-	            <a href=<%= data[i].vk%>target="_blank">vk.com</a>
-  		    </div>
-       </div>
-	</script>
-
+ 		   <script type="text/html"  id='test'>
+            <% for (var i = 0; i < data.length; i++ ) { %>
+                <div class="info">
+                    <h2 class="title"><%= data[i].title %></h2>
+                    <span class="my-name"><%= data[i].firstName %></span>
+                    <span class="my-surname"><%= data[i].lastName %></span>
+                    <img src="img/marina.jpg""<%= data[i].img %>" class="img"><%= data[i].img %>
+                    <a href="<%= data[i].email %>"  class="email"><%= data[i].email %></a>
+                    <a href="<%= data[i].phone %>"  class="phone"><%= data[i].phone %></a>
+                    <span class="college"><%= data[i].college %></a>
+                    <span class="country"><%= data[i].country %></a>
+                    <span class="city"><%= data[i].city %></a>
+                </div>
+            <% }; %>
+     	   </script>            
+    </div>
+    
 </body>
 </html>
