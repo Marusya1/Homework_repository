@@ -1,7 +1,6 @@
 function GoogleCallback(jqueryObj, data) {
 		
 		var resultObj = data.results;
-		//console.log('data', resultObj);
 		$('.js-result').find('li').remove();
 
 		for(var i = 0; i < resultObj.length; i++) {
@@ -25,7 +24,6 @@ function GoogleCallback(jqueryObj, data) {
 			   dataType : "jsonp",
 			   // Handle the success event
 			   success: function (data) {
-			      // console.log(data);
 			   }
 			});
 		}
@@ -39,19 +37,17 @@ function GoogleCallback(jqueryObj, data) {
 	        search();
 	    }
 	});
-
-
 	
 });
-	function Human(your name, your age, your sex, your height, your weight) {
+	function Human(your_name, your_age, your_sex, your_height, your_weight){
 		this.name = 'your name',
 		this.age = 'your age',
 		this.sex = 'your sex',
 		this.height = 'your height',
-		this.weight = 'your weight',
+		this.weight = 'your weight'
 	}
 
-	function Worker(your job, salary, age) {
+	function Worker(your_job, salary, age) {
 		this.job = 'your company',
 		this.salary = 100,
 		this.age = 50,
@@ -67,7 +63,6 @@ function GoogleCallback(jqueryObj, data) {
 			console.log('watch');
 		}
 	}
-
 	Worker.prototype = new Human();
 	Student.prototype = new Human();
 	Student.prototype = new Worker();
