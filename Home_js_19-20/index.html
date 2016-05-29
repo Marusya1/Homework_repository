@@ -1,81 +1,227 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/> <!-- для медиазапросов-->
-    <title>Home_js_19-20</title>
-    <link rel="shortcut icon" href="favicon.ico">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+<title></title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- <script type="text/javascript" src="js/vendor/slick.js"></script> -->
+<script type="text/javascript" src="js/vendor/slick.min.js"></script> 
+<script src="js/custom/script.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/application.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+<link rel="stylesheet" href="css/application.css">
+
+
 </head>
 <body>
-	<div class="wrapper">
-		<div class="wrapper1">
-			<header> 
-				<span class="block2"> Ola! <a href="#">Entrar</a> ou <a href="#">Cadastre-se</a></span>
-				<span class="block1"><img src="images/flag.jpg"><a href="#"> Minhas Ofertas </a></span>
-						
-				<ul class="menu">
-					<li><a href="#"> Meu YouBike </a></li>
-					<li><a href="#"> Vender </a></li> 
-					<li><a href="#"> Forum </a></li> 
-					<li><a href="#"> Contato </a></li> 
-					<li><a href="#"> Ajuda </a></li> 
-				</ul>
-			</header>
-
-			<div class="conteiner clearfix"> 
-				<div class="box-header">
-					<h1><a href="#"> Cadastre-se</a></h1>				
-				</div>
-
-				<div class="box-main">
-					<form>
-						<div class="box-form">
-							<button class="fb_login"><img src="images/Facebook.jpg"></button>
-
-							<div class="row">	
-								<div class="line left-line"></div>
-									<span class="between-line">OU</span>
-								<div class="line right-line"></div>
-							</div>	
-						
-							<div class="row"><input type="text" name="First name" placeholder="First Name" required/></div>
-							<div class="row"><input type="text" name="Last name" placeholder="Last Name" required></div>
-							<div class="row"><input type="email" name="email" placeholder="Email Address" required></div>
-							<div class="row"><input type="password" name="password" placeholder="Choose Password" required></div>
-							<div class="row"><input type="password" name="password" placeholder="Password Confirm" required></div>
-						
-							<div class="row">
-								<div class="checkbox">
-									<input type="checkbox" id="send">
-									<label for="send">Send me Youbike updates and tips</label>
-								</div>	
-							</div>
-
-							<div class="row">
-								<div class="submit">
-								<input type="submit" value="Create my Account">		
-								</div>
-							</div>	
-						</div>
-
-						<div class="last">
-							<p>By clicking the button above, you agree to the Terms of Service </p>
-							<p>Xiew our Privacy Policy.</p>
-
-						</div>
-					</form>
-	
-				</div>
-
-			</div>
-		</div> 
-
-
-	</div>
-
+ <div class="wrapper">
+     <div class="W1">
+        <header class="header clearfix">
+            <div class="container">
+                
+                    <a class="logo_name" href="#" ><img src="img/logo.png"></a>
+                
+                <div class="in_network">
+                    <a href="#" class="facebook in_network__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="twitter in_network__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" class="network in_network__link"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                    <a href="#" class="linkedin in_network__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" class="skype in_network__link"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                </div>
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li><a class="is-active" href="#">HOME</a></li>
+                        <li><a class="is-active" href="#">FEATURES</a></li>
+                        <li><a class="is-active" href="#">SERVISES</a></li>
+                        <li><a class="is-active" href="#">NEWS</a></li>
+                        <li><a class="is-active" href="#">SHOP</a></li>
+                        <form class="search-form">
+                         <input type="text" placeholder="Search">
+                         <!-- <input type="button" > -->
+                         <input type="button"><i class="fa fa-search" aria-hidden="true"></i>             
+                         </form>
+                    </ul>
+                </div>
+                <div class="fade">
+                  <div><img src="img/slider1.png"></div>
+                  <div><img src="img/slider.jpg"></div>
+                  <div><img src="img/slider.jpg"></div>
+                </div>
+                <div class="about_company">
+                    <div class="settings">
+                        <span class="number">01</span>
+                         <img src="img/iconSettings.png"> 
+                        <h3>Power Inside</h3>
+                    <div class="text">
+                        <span>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris.</span>                     
+                    </div>
+                    <div class="read">
+                        <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>                     
+                    </div>
+                      <div class="settings">
+                        <span class="number">02</span>
+                        <img src="img/iconParams.png">
+                        <h3>New Tehnologies</h3>
+                      <div class="text">
+                        <span>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris.</span>                     
+                      </div> 
+                      <div class="read">
+                          <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                      </div>                     
+                      </div>
+                        <div class="settings">
+                            <span class="number">03</span>
+                            <img src="img/iconTruck.png">
+                            <h3>Fast Support</h3>
+                        <div class="text">
+                            <span>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris.</span>                     
+                        </div> 
+                        <div class="read">
+                            <a href="#">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>                     
+                      </div>
+                </div>                 
+           </div>
+        </header>
+        <div class="service-block">
+            <div class="container">
+            <div class="title"><p>Our Services</p></div>
+                <div class="our_service">
+                    <a href="#"><span><img src="img/rectangle&plus.png"></span><img src="img/image1.png">
+                    <h2>Vehicula Tempus</h2></a>
+                </div>
+                <div class="our_service">
+                    <a href="#"><span><img src="img/rectangle&plus.png"></span><img src="img/image2.png">
+                    <h2>Vehicula Tempus</h2></a>
+                </div>
+                <div class="our_service">
+                    <a href="#"><span><img src="img/rectangle&plus.png"></span><img src="img/image3.png">
+                    <h2>Vehicula Tempus</h2></a>
+                </div>
+              <div class="our_service">
+                    <a href="#"><span><img src="img/rectangle&plus.png"></span><img src="img/image4.png">
+                    <h2>Vehicula Tempus</h2></a>
+                </div>
+            </div>                                
+        </div>
+        <div class="content-block">
+          <div class="container">
+            <div class="news">
+              <span>Latest News</span>
+            <div class="news_box">
+                <img src="img/imgNews1.png">
+                <div class="date-month">Jan</div>
+                <div class="date-number">23</div>
+                <a href="#">Advanced Machinery Help Inprove Quality</a>
+                <span class="comment">by <a href="#"> cmsmasters </a> Comments (<a href="#">6</a>)</span>
+                 <p>Cum sociis natoque penatibus et magnis dis parturient
+                    ontesmus. Pro vel nibh et elit mollis commodo et nec
+                    augueique Nemo enim ipsam voluptatem quia ptas sit
+                    aspernatur samomo enim ipsam voluptatem.</p>
+            </div>
+            <div class="news_box">
+                <img src="img/imgNews2.png">
+                <div class="date-month">Jan</div>
+                <div class="date-number">21</div>
+                <a class="technic" href="#">Powerfull Techniques Advanced Service</a>
+                <span class="comment">by <a href="#"> cmsmasters </a> Comments (<a href="#">3</a>)</span>
+                 <p>Cum sociis natoque penatibus et magnis dis parturient
+                    ontesmus. Pro vel nibh et elit mollis commodo et nec
+                    augueique Nemo enim ipsam voluptatem quia ptas sit
+                    aspernatur samomo enim ipsam voluptatem.</p>
+            </div>
+            </div>
+            <div class="banners">              
+                <span>Banners Place</span>              
+                <div class="accordion">
+                    <div class="plus"><span>ACCORDION PANEL 1</span></div>
+                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. </P>
+                                 
+                    <div class="plus"><span>ACCORDION PANEL 2</span></div>
+                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla.</P>
+                                
+                    <div class="plus"><span>ACCORDION PANEL 3</span></div>
+                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla.</P>
+                 
+                    <div class="plus"><span>ACCORDION PANEL 4</span></div>
+                    <P>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla.</P>
+                </div>
+             </div>
+             </div>
+             </div> 
+            <div class="brands">
+                <div class="container">
+                  <ul>
+                    <li><a href="#"><img src="img/logosRbr.png"></a></li>
+                    <li><a href="#"><img src="img/iconMoto.png"></a></li>
+                    <li><a href="#"><img src="img/iconCrave.png"></a></li>
+                    <li><a href="#"><img src="img/logoAtx.png"></a></li>
+                    <li><a href="#"><img src="img/logoCear.png"></a></li>
+                    <li><a href="#"><img src="img/logosCruiser.png"></a></li>
+                  </ul>
+                </div>
+            </div>
+          <div class="information">  
+            <div class="container">
+              <div class="information-list">
+                  <span>SOCIALS</span>
+                  <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Flickr</a></li>
+                      <li><a href="#">Twitter</a></li>
+                      <li><a href="#">Vimeo</a></li>
+                  </ul>
+              </div>
+              <div class="information-list">
+                  <span>LINKS</span>
+                  <ul>
+                      <li><a href="#">How to Write a Blog</a></li>
+                      <li><a href="#">Create a Blog in 4 Steps</a></li>
+                      <li><a href="#">15 tpa to Encreace Traffic</a></li>
+                      <li><a href="#">20 Post Idees</a></li>
+                  </ul>
+              </div>
+              <div class="information-list">
+                  <span>BLOGROLL</span>
+                  <ul>
+                      <li><a href="#">Blogs Blog</a></li>
+                      <li><a href="#">Roll up Roll up</a></li>
+                      <li><a href="#">Blog Free</a></li>
+                      <li><a href="#">Wordpress Blog</a></li>
+                  </ul>
+              </div>
+              <div class="information-list">
+                  <span>ABOUT US</span>
+                  <ul>
+                      <li><a href="#">Agriculture</a></li>
+                      <li><a href="#">Harvest</a></li>
+                      <li><a href="#">Company News</a></li>
+                      <li><a href="#">Investor Relations</a></li>
+                  </ul>
+              </div>
+              </div>
+              </div>
+              <footer class="footer">
+              <div class="container">
+              <div class="contacts">
+                  <div class="adress">
+                      <img src="img/point.png">
+                      <a><span>Aliquam sodales 112 33 75 Mauris</span></a>
+                  </div>
+                  <div class="fone_number">
+                      <img src="img/iconPhone.png">
+                      <a href="callto:0441234567">+38-044-123-45-67</a>
+                  </div>
+                  <span>&reg; 2014 Build Home</span>
+              </div>
+              </div>              
+            </footer>
+      
+     </div>
+ </div> 
 </body>
 </html>
-

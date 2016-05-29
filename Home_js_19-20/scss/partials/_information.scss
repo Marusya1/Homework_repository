@@ -1,0 +1,37 @@
+.information {
+	display: block;
+	overflow: hidden;
+	background: #2a2d32;
+}
+.information-list {
+	display: block;
+	float: left;
+	width: 250px;
+	padding-top: 40px;
+	margin-right: 40px;
+}
+.information-list span{
+	color: #fff;
+	padding-bottom: 40px;
+
+}
+.information-list ul{
+	padding: 0;
+	padding-top: 20px;
+}
+.information-list li{
+	border-bottom: 1px solid #7d7e81;
+}
+.information-list li:last-child{
+	border-bottom: none;
+}
+.information-list li a {
+	display: block;
+	color: #7d7e81;
+	padding: 20px 30px 20px 0;
+	font-size: 14px;
+	text-decoration: none;
+}
+.information-list a:hover{
+    color: #248cec;
+}

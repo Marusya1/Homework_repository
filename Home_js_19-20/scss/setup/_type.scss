@@ -1,16 +1,27 @@
-@font-face {
-   font-family: "helveticaneuecyr-light";
-    src: url("fonts/helveticaneuecyr-light.eot");
-    src: url("fonts/helveticaneuecyr-light.eot?#iefix") format("embedded-opentype"), 
-    url("fonts/helveticaneuecyr-light.woff") format("woff"), 
-    url("fonts/helveticaneuecyr-light.ttf") format("truetype");
-    font-style: normal;
+/*@font-face {
+    font-family: 'philosopherregular';
+    src: url('../fonts/philosopher-regular-webfont.eot');
+    src: url('../fonts/philosopher-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/philosopher-regular-webfont.woff2') format('woff2'),
+    url('../fonts/philosopher-regular-webfont.woff') format('woff'),
+    url('../fonts/philosopher-regular-webfont.ttf') format('truetype'),
+    url('../fonts/philosopher-regular-webfont.svg#philosopherregular') format('svg');
     font-weight: normal;
-     
+    font-style: normal;
+}*/
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helveticaneue-extended-webfont.eot');
+    src: url('../fonts/helveticaneue-extended-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-extended-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-extended-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-extended-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-extended-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-
 //FONT FAMILIES
-$font-base: "helveticaneuecyr-light", Arial, sans-serif;
+$font-base: 'helvetica_neueregular', Arial, sans-serif;
 
 //FONT SIZES
 $fontSize-smallest: 12px;

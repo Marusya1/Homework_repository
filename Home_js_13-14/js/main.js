@@ -82,16 +82,14 @@ var page = {
 				var listItem = document.createElement('li');
 				varients.appendChild(listItem);
 
+			var label = document.createElement('label');
+				label.classList.add('variant');
+				listItem.appendChild(label);
+
 				var checkBox = document.createElement('input');
 				checkBox.setAttribute('type', 'checkBox');
 				checkBox.setAttribute('id', data.question[i].questionList[j].id);					
-				listItem.appendChild(checkBox);
-
-
-				var list_link = document.createElement('lable');
-				list_link.innerHTML = data.question[i].questionList[j].lable;
-				list_link.setAttribute('for', data.question[i].questionList[j].id);
-				listItem.appendChild(list_link);
+				lable.appendChild(checkBox);
 			}
 		}
 	},
@@ -99,21 +97,15 @@ var page = {
 		var div = document.createElement('button');
 		div.className = 'button-box';
 		document.querySelector('.form').appendChild(div);
-
-		var button = document.createElement('input');
 		button.className = 'button';
 		button.setAttribute('type', 'submit');
 		button.setAttribute('value', 'Проверить мои результаты');
-		div.appendChild(button);
-	},
-	
-	pageInit: function() {
-		this.addDivWrapper();
-		this.addList();
-		this.addButton();
+		button.addEventListener('click', function(){
+			var answers = document.getElementsByTagName('input');
+			if (answers[0].checked && answers[3].checked && answers[6].checked == true) {			
+			alert('Молодец!')
+		} else {
+			alert('Попробуй еще раз!');
+		}
+		});
 	}
-}
-
-page.pageInit();
-
-console.log(data);	

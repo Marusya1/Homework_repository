@@ -1,0 +1,64 @@
+.about_company{
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.settings{
+	display: block;
+	width: 386px;
+	float: left;
+	padding-bottom: 60px;
+}
+h3 {
+	margin: 0;
+	position: relative;
+	left: 124px;
+	bottom: 39px;
+	font-size: 21px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.number {
+	display: inline-block;
+	color: #e9e9ea;
+	font-size: 98px;
+}
+.settings img {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-bottom: 33px;
+	margin-left: 15px;
+}
+.fa-arrow-right{
+	color: #ccc;
+    padding-left: 10px;
+	&:hover{
+    color: blue;
+   }
+}
+.text span {
+	display: inline-block;
+	color: #8a8a8a;
+	font-size: 16px;
+	line-height: 1.6;
+	padding-left: 122px;
+}
+.read {
+	display: block;
+	padding-top: 28px;
+}
+.read a {
+	color: #2a2b2e;
+	padding-left: 122px;
+	position: relative;
+	top: -10px;
+	font-size: 17px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+.read a:hover {
+	color: #248cec;
+}
+
+
+
+

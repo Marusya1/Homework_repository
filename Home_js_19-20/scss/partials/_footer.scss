@@ -1,0 +1,49 @@
+.footer{
+	display: block;
+	background: #35383c;
+}
+
+.adress{
+	display: block;
+	float: left;
+	padding-bottom: 10px;
+}
+.adress img{
+	display: block;
+	position: absolute;
+	padding-top: 11px;
+}
+.adress a{
+	display: block;
+	float: left;
+	padding-left: 30px;
+}
+.adress a:hover{
+    color: #248cec;
+}
+.adress span{
+	display: block;
+	font-size: 13px;
+	color: #7d7e81;
+}
+.fone_number{
+	display: block;
+	float: left;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+.fone_number a{
+	color: #7d7e81;
+	font-size: 14px;
+	padding-left: 10px; 
+}
+.fone_number a:hover{
+	color:  #248cec;
+}
+.contacts span{
+	display: block;
+	float: right;
+	font-size: 13px;
+	padding-top: 13px;
+	color:  #7d7e81;
+}

@@ -1,17 +1,16 @@
-/*@font-face {
-    font-family: 'philosopherregular';
-    src: url('../fonts/philosopher-regular-webfont.eot');
-    src: url('../fonts/philosopher-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/philosopher-regular-webfont.woff2') format('woff2'),
-    url('../fonts/philosopher-regular-webfont.woff') format('woff'),
-    url('../fonts/philosopher-regular-webfont.ttf') format('truetype'),
-    url('../fonts/philosopher-regular-webfont.svg#philosopherregular') format('svg');
-    font-weight: normal;
+@font-face {
+   font-family: "helveticaneuecyr-light";
+    src: url("fonts/helveticaneuecyr-light.eot");
+    src: url("fonts/helveticaneuecyr-light.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/helveticaneuecyr-light.woff") format("woff"), 
+    url("fonts/helveticaneuecyr-light.ttf") format("truetype");
     font-style: normal;
-}*/
+    font-weight: normal;
+     
+}
 
 //FONT FAMILIES
-$font-base: Arial, sans-serif;
+$font-base: "helveticaneuecyr-light", Arial, sans-serif;
 
 //FONT SIZES
 $fontSize-smallest: 12px;
