@@ -2,14 +2,14 @@
 	margin-bottom: 40px;
 }
 .title p {
-	font-size: 25px;
-	color: #fff;
+	font-size: $fontSize-large;
+	color: $white;
 }
 .our_service span:hover{
-	color: #f4b60d;
+	color: $yellow;
 }
 .content-block {
-	background-color: #f7f7f7;
+	background-color: $content;
 	display: block;
 	overflow: hidden;
 	padding-bottom: 43px;	
@@ -23,19 +23,19 @@
 	display: block;
 	padding-top: 55px;
 	padding-bottom: 40px;
-	font-size: 24px;
+	font-size: $fontSize-large;
 	font-weight: bold;
 }
 .news_box a {
 	display: block;
 	float: right;
-	font-size: 18px;
-	padding-right: 17px;
+	font-size: $fontSize-small;
+	padding-right: 24px;
 	font-weight: bold;
-	color: #2a2d32;
+	color: $service;
 }
 .news_box a:hover{
-	color: #248cec;
+	color: $blue;
 }
 .news_box {
 	position: relative;
@@ -45,23 +45,23 @@
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: #248cec;
+	background: $blue;
 	position: absolute;
 	top: 10px;
 	left: -11px;
 	text-align: center;
-    line-height: 2.2;
+    line-height: $lineHeight-big;
 }
 .date-number{
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: #f4b60d;
+	background: $yellow;
 	position: absolute;
 	top: 50px;
 	left: -11px;
 	text-align: center;
-	line-height: 2.2;
+	line-height: $lineHeight-big;
 }
 .comment {
     display: block;
@@ -71,13 +71,13 @@
 	display: inline-block;
 	float: none;
 	padding: 0;
-	color: #248cec;
-	font-size: 15px;
+	color: $blue;
+	font-size: $fontSize-smaller;
 }
 .news_box span {
 	display: inline-block;
-	color: #ababab;
-	font-size: 15px;
+	color: $news;
+	font-size: $fontSize-smaller;
 	position: absolute;
     padding: 0;
     top: 30px;
@@ -89,13 +89,13 @@
 	position: absolute;
 	left: 177px;
 	top: 52px;
-	font-size: 14px;
-	line-height: 1.5;
+	font-size: $fontSize-smallest;
+	line-height: $lineHeight-small;
 	width: 405px;
-    color: #ababab;
+    color: $news;
 }
 a.technic {
-	padding-right: 33px;
+	padding-right: 39px;
 }
 .banners {
 	display: block;
@@ -106,46 +106,62 @@ a.technic {
 	display: block;
 	padding-top: 55px;
 	padding-bottom: 40px;
-	font-size: 24px;
+	font-size: $fontSize-large;
 	font-weight: bold;
 }
 .plus {
 	display: block;
 	position: relative;
-	background: #fff;
-	border: 1px solid #e8e8e8;
+	background: $white;
+	border: 1px solid $plus;
 	margin: 5px;
 }
 .plus:before{
 	content: '+';
 	display: inline-block;
-	color: #2a2d32;
-	border-right: 3px solid #e8e8e8;
+	color: $dark-gray;
+	border-right: 3px solid $plus;
 	padding: 15px 20px;
 }
 .plus span {
 	display: inline-block;
     padding: 15px;
-	color: #2a2d32;
-	font-size: 16px;
+	color: $dark-gray;
+	font-size: $fontSize-smaller;
 }
 .accordion p {
 	display: none;
-	color: #ababab;
-	font-size: 14px;
-	line-height: 1.5; 
+	color: $news;
+	font-size: $fontSize-smallest;
+	line-height: $lineHeight-small; 
 	padding: 10px 0 10px 55px;
 }
 .plus:hover{
-	background: #f4b60d;
+	color: $white;
+	background: $yellow;
 	cursor: pointer;
-
+}
+.plus:active{
+	color: $white;
+	background: $yellow;
+	cursor: pointer;
 }
 .plus span:hover{
-	color: #fff;
+	color: $white;
+}
+.plus.active span{
+	color: $white;
 }
 .plus:hover:before{
 	content: '-';
-	color: #fff;
+	color: $white;
 	padding-right: 25px;
+}
+.plus.active:before{
+	content: '-';
+	color: $white;
+	padding-right: 25px;
+}
+.accordion .active{
+ background: $yellow;
 }

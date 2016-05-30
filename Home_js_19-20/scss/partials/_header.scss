@@ -38,44 +38,44 @@
     padding-left: 20px;
 }
 .fa{
-    color: #ccc;
-    font-size: 15px;
+    color: $gray;
+    font-size: $fontSize-smaller;
 }
 
 .fa-facebook{
-    color: #ccc;
+    color: $gray;
    
    &:hover{
-    color: blue;
+    color: $blue;
    }
 }
 
 .fa-twitter{
-    color:#ccc;
+    color:$gray;
 
    &:hover{
-    color: blue;
+    color: $blue;
    }
 }
 .fa-rss{
-      color:#ccc;
+      color:$gray;
 
    &:hover{
-    color: blue;
+    color: $blue;
    }
 }
 .fa-linkedin{
-      color:#ccc;
+      color:$gray;
 
    &:hover{
-    color: blue;
+    color: $blue;
    }
 }
 .fa-skype{
-      color:#ccc;
+      color:$gray;
 
    &:hover{
-    color: blue;
+    color: $blue;
    }
 }
 

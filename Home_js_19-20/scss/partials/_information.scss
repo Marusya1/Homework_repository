@@ -1,7 +1,7 @@
 .information {
 	display: block;
 	overflow: hidden;
-	background: #2a2d32;
+	background: $service;
 }
 .information-list {
 	display: block;
@@ -11,7 +11,7 @@
 	margin-right: 40px;
 }
 .information-list span{
-	color: #fff;
+	color: $white;
 	padding-bottom: 40px;
 
 }
@@ -20,18 +20,18 @@
 	padding-top: 20px;
 }
 .information-list li{
-	border-bottom: 1px solid #7d7e81;
+	border-bottom: 1px solid $info;
 }
 .information-list li:last-child{
 	border-bottom: none;
 }
 .information-list li a {
 	display: block;
-	color: #7d7e81;
+	color: $info;
 	padding: 20px 30px 20px 0;
-	font-size: 14px;
+	font-size: $fontSize-smallest;
 	text-decoration: none;
 }
 .information-list a:hover{
-    color: #248cec;
+    color: $blue;
 }

@@ -8,7 +8,7 @@ html,body{
     height: 100%;
 }
 body {
-    font-family: 'Ubuntu', Arial, sans-serif;
+    font-family: $font-ubunta, $font-base;
 }
 .Wrapper{
     display: table;
@@ -35,6 +35,6 @@ body {
     margin: 0 auto;
 }
 .fa{
-    color: #ccc;
-    font-size: 15px;
+    color: $gray;
+    font-size: $fontSize-smaller;
 }

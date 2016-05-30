@@ -1,38 +1,31 @@
 
-/*.slick-dots li{
-	border: 15px solid #fff;
-	position: relative;
-	top: -38px;
-	left: 4px;
-}*/
-/*.slick-dots li:active {
-	color: #000;
-}*/
 ul.slick-dots {
 	display: block;
 	position: absolute;
 	left: 459px;
 	bottom: 23px;
 }
+button[type=button]{
+  display: none;
+}
+
 .slick-dots li{
+	width: 20px;
+	height: 20px;
 	float: left;
-	border: 8px solid #fff;
+	border: 3px solid $white;
 	margin-right: 22px;
 	position: relative;
-	color: #fff;
-	background: #fff;
+    cursor: pointer;
 }
+.slick-active{
+  background: $black;
+}
+
 button.slick-next.slick-arrow{
-	display: none;
+  display: none;
 }
 button.slick-prev.slick-arrow{
-	display: none;
+  display: none;
 }
-button[type="button"]{
-	background: #fff;
-	color: #fff;
-	border: none;
-}
-button:active{
-	background: #000;
-}
+

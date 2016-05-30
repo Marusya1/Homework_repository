@@ -13,13 +13,13 @@ h3 {
 	position: relative;
 	left: 124px;
 	bottom: 39px;
-	font-size: 21px;
-	font-family: 'Ubuntu', sans-serif;
+	font-size: $fontSize-larger;
+	font-family: $font-ubunta;
 }
 .number {
 	display: inline-block;
-	color: #e9e9ea;
-	font-size: 98px;
+	color: $light-gray;
+	font-size: $fontSize-xlarg;
 }
 .settings img {
 	display: inline-block;
@@ -29,17 +29,17 @@ h3 {
 	margin-left: 15px;
 }
 .fa-arrow-right{
-	color: #ccc;
+	color: $gray;
     padding-left: 10px;
 	&:hover{
-    color: blue;
+    color: $blue;
    }
 }
 .text span {
 	display: inline-block;
-	color: #8a8a8a;
-	font-size: 16px;
-	line-height: 1.6;
+	color: $text;
+	font-size: $fontSize-middle;
+	line-height: $lineHeight-base;
 	padding-left: 122px;
 }
 .read {
@@ -47,16 +47,16 @@ h3 {
 	padding-top: 28px;
 }
 .read a {
-	color: #2a2b2e;
+	color: $read;
 	padding-left: 122px;
 	position: relative;
 	top: -10px;
-	font-size: 17px;
-	font-family: 'Ubuntu', sans-serif;
+	font-size: $fontSize-middle;
+	font-family: $font-ubunta;
 	font-weight: bold;
 }
 .read a:hover {
-	color: #248cec;
+	color: $blue;
 }
 
 
