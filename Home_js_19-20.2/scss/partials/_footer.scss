@@ -1,0 +1,72 @@
+.footer{
+	display: block;
+	background: $middle-gray;
+}
+
+.adress{
+	display: block;
+	float: left;
+	padding-bottom: 10px;
+}
+.adress img{
+	display: block;
+	position: absolute;
+	padding-top: 11px;
+}
+.adress a{
+	display: block;
+	float: left;
+	padding-left: 30px;
+}
+.adress a:hover{
+    color: $blue;
+}
+.adress span{
+	display: block;
+	font-size: $fontSize-smallest;
+	color: $info;
+}
+.fone_number{
+	display: block;
+	float: left;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+.fone_number a{
+	color: $info;
+	font-size: $fontSize-smallest;
+	padding-left: 10px; 
+}
+.fone_number a:hover{
+	color: $blue;
+}
+.email{
+	display: inline-block;
+	float: left;
+}
+.email img{
+	display: block;
+	float: left;
+	padding-top: 14px;
+	padding-left: 30px;
+	padding-right: 15px;
+}
+.email a{
+	color: $info;
+	font-size: $fontSize-smallest;
+	padding-top: 12px; 
+	display: inline-block;
+	float: left;
+}
+.email a:hover{
+	color: $blue;
+	
+	
+}
+.contacts span{
+	display: block;
+	float: right;
+	font-size: $fontSize-smallest;
+	padding-top: 13px;
+	color: $info;
+}

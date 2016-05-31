@@ -1,0 +1,64 @@
+.about_company{
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.settings{
+	display: block;
+	width: 386px;
+	float: left;
+	padding-bottom: 60px;
+}
+h3 {
+	margin: 0;
+	position: relative;
+	left: 124px;
+	bottom: 39px;
+	font-size: $fontSize-larger;
+	font-family: $font-ubunta;
+}
+.number {
+	display: inline-block;
+	color: $light-gray;
+	font-size: $fontSize-xlarg;
+}
+.settings img {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-bottom: 33px;
+	margin-left: 15px;
+}
+.fa-arrow-right{
+	color: $gray;
+    padding-left: 10px;
+	&:hover{
+    color: $blue;
+   }
+}
+.text span {
+	display: inline-block;
+	color: $text;
+	font-size: $fontSize-middle;
+	line-height: $lineHeight-base;
+	padding-left: 122px;
+}
+.read {
+	display: block;
+	padding-top: 28px;
+}
+.read a {
+	color: $read;
+	padding-left: 122px;
+	position: relative;
+	top: -10px;
+	font-size: $fontSize-middle;
+	font-family: $font-ubunta;
+	font-weight: bold;
+}
+.read a:hover {
+	color: $blue;
+}
+
+
+
+

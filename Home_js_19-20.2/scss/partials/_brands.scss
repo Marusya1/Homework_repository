@@ -1,0 +1,14 @@
+.brands {
+	display: block;
+	overflow: hidden;
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.brands ul li {
+   display: block;
+   float: left;
+   padding-right: 72px;
+}
+.brands a:hover{
+	opacity: 0.6;
+}

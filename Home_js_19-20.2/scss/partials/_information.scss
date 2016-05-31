@@ -1,0 +1,37 @@
+.information {
+	display: block;
+	overflow: hidden;
+	background: $service;
+}
+.information-list {
+	display: block;
+	float: left;
+	width: 250px;
+	padding-top: 40px;
+	margin-right: 40px;
+}
+.information-list span{
+	color: $white;
+	padding-bottom: 40px;
+
+}
+.information-list ul{
+	padding: 0;
+	padding-top: 20px;
+}
+.information-list li{
+	border-bottom: 1px solid $info;
+}
+.information-list li:last-child{
+	border-bottom: none;
+}
+.information-list li a {
+	display: block;
+	color: $info;
+	padding: 20px 30px 20px 0;
+	font-size: $fontSize-smallest;
+	text-decoration: none;
+}
+.information-list a:hover{
+    color: $blue;
+}

@@ -1,0 +1,61 @@
+.menu {
+	padding-bottom: 23px;
+	position: relative;
+}
+.menu ul {
+	display: block;
+	width: 100%;
+	padding-left: 0;
+}
+.menu-list li {
+	display: inline-block;
+	border-right: 1px solid $light-black;	
+}
+.menu-list {
+	display: block;
+	background: $dark-gray;
+}
+.menu-list li a {
+	color: $white;
+    font-family: $font-ubunta, $font-base;
+    font-size: $fontSize-smallest;
+    padding: 20px 33px;
+    display: inline-block;
+}
+.menu-list li a:hover {
+	color: $yellow;
+}
+.menu-list li:first-child {
+	background: $blue;
+}
+.fa-search{
+    position: absolute;
+    color: $gray;
+    right: 24px;
+    bottom: 62px;
+}
+.search-form {
+	display: block;
+	float: right;
+	padding-top: 10px;
+}
+.search-form input {
+	border: none;	
+}
+ input[type="text"]{
+    color: $white;
+	background: $middle-gray;
+	border: 1px solid $black;
+	padding: 10px 50px 10px 10px;
+	margin-right: 8px;
+	position: absolute;
+	right: 0;
+}
+input[type="button"]{
+    display: block;
+    position: absolute;
+    right: 9px;
+    bottom: 58px;
+    width: 40px;
+    background: $middle-gray;
+}

@@ -12,7 +12,8 @@ body{
   width: 608px;
   margin: 50px auto;
   background-image: url(../img/wrapper-bgrnd.png);
-  border: 2px solid grey;
+  border: 2px solid #433e42;
+  border-radius: 5px;
 }
 .item-list{
   list-style: none;
@@ -33,7 +34,7 @@ body{
   height: 12px;
   width: 125px;
 }
-.item-add{
+.enter{
   font-family: sans-serif;
 }
 p{
